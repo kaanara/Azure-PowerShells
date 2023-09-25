@@ -14,3 +14,4 @@ ForEach($sub in $subscriptions)
         Get-AzWebAppBackupConfiguration -Name $webapp.Name -ResourceGroupName $webapp.ResourceGroup | Export-Csv $filename -NoTypeInformation -Append -Force
     } 
 }
+
